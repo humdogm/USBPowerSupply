@@ -1,0 +1,346 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Breadboard USB Power"
+Date "2019-04-15"
+Rev "v01"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Author: Humza Tariq"
+$EndDescr
+$Comp
+L Connector:USB_B_Micro J5
+U 1 1 5CB5386C
+P 7300 4350
+F 0 "J5" H 7355 4817 50  0000 C CNN
+F 1 "USB_B_Micro" H 7355 4726 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 7450 4300 50  0001 C CNN
+F 3 "~" H 7450 4300 50  0001 C CNN
+	1    7300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR07
+U 1 1 5CB53929
+P 7300 4900
+F 0 "#PWR07" H 7300 4650 50  0001 C CNN
+F 1 "GNDREF" H 7305 4727 50  0000 C CNN
+F 2 "" H 7300 4900 50  0001 C CNN
+F 3 "" H 7300 4900 50  0001 C CNN
+	1    7300 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4050 7700 4150
+Wire Wire Line
+	7700 4150 7600 4150
+Wire Wire Line
+	7300 4750 7300 4800
+$Comp
+L Device:C C1
+U 1 1 5CB54AD5
+P 3550 4500
+F 0 "C1" H 3665 4546 50  0000 L CNN
+F 1 "0.1uF" H 3665 4455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3588 4350 50  0001 C CNN
+F 3 "~" H 3550 4500 50  0001 C CNN
+	1    3550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4250 3550 4250
+Wire Wire Line
+	3550 4250 3550 4350
+$Comp
+L power:GNDREF #PWR03
+U 1 1 5CB54D92
+P 4000 4800
+F 0 "#PWR03" H 4000 4550 50  0001 C CNN
+F 1 "GNDREF" H 4005 4627 50  0000 C CNN
+F 2 "" H 4000 4800 50  0001 C CNN
+F 3 "" H 4000 4800 50  0001 C CNN
+	1    4000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4650 3550 4750
+Wire Wire Line
+	3550 4750 4000 4750
+Wire Wire Line
+	4000 4750 4000 4800
+Wire Wire Line
+	4000 4550 4000 4750
+Connection ~ 4000 4750
+Wire Wire Line
+	4300 4250 4450 4250
+$Comp
+L Device:C C3
+U 1 1 5CB55482
+P 5400 4500
+F 0 "C3" H 5515 4546 50  0000 L CNN
+F 1 "0.1uF" H 5515 4455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5438 4350 50  0001 C CNN
+F 3 "~" H 5400 4500 50  0001 C CNN
+	1    5400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4250 5400 4250
+Wire Wire Line
+	5400 4250 5400 4350
+$Comp
+L power:GNDREF #PWR06
+U 1 1 5CB55492
+P 5850 4800
+F 0 "#PWR06" H 5850 4550 50  0001 C CNN
+F 1 "GNDREF" H 5855 4627 50  0000 C CNN
+F 2 "" H 5850 4800 50  0001 C CNN
+F 3 "" H 5850 4800 50  0001 C CNN
+	1    5850 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4650 5400 4750
+Wire Wire Line
+	5400 4750 5850 4750
+Wire Wire Line
+	5850 4750 5850 4800
+Wire Wire Line
+	5850 4550 5850 4750
+Connection ~ 5850 4750
+Wire Wire Line
+	6150 4250 6300 4250
+$Comp
+L power:VBUS #PWR01
+U 1 1 5CB55738
+P 3550 4100
+F 0 "#PWR01" H 3550 3950 50  0001 C CNN
+F 1 "VBUS" H 3565 4273 50  0000 C CNN
+F 2 "" H 3550 4100 50  0001 C CNN
+F 3 "" H 3550 4100 50  0001 C CNN
+	1    3550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4100 3550 4250
+Connection ~ 3550 4250
+$Comp
+L power:VBUS #PWR04
+U 1 1 5CB55C7F
+P 5400 4100
+F 0 "#PWR04" H 5400 3950 50  0001 C CNN
+F 1 "VBUS" H 5415 4273 50  0000 C CNN
+F 2 "" H 5400 4100 50  0001 C CNN
+F 3 "" H 5400 4100 50  0001 C CNN
+	1    5400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4100 5400 4250
+Connection ~ 5400 4250
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5CB574E7
+P 4000 3350
+F 0 "J1" V 4060 3490 50  0000 L CNN
+F 1 "Conn_01x03_Male" V 4151 3490 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4000 3350 50  0001 C CNN
+F 3 "~" H 4000 3350 50  0001 C CNN
+	1    4000 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5CB57FD9
+P 5850 3350
+F 0 "J3" V 5910 3490 50  0000 L CNN
+F 1 "Conn_01x03_Male" V 6001 3490 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5850 3350 50  0001 C CNN
+F 3 "~" H 5850 3350 50  0001 C CNN
+	1    5850 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 3550 4450 3550
+Wire Wire Line
+	4450 3550 4450 4250
+Wire Wire Line
+	3900 3550 3400 3550
+Wire Wire Line
+	3400 3550 3400 4250
+Wire Wire Line
+	3400 4250 3550 4250
+Wire Wire Line
+	5750 3550 5250 3550
+Wire Wire Line
+	5250 3550 5250 4250
+Wire Wire Line
+	5250 4250 5400 4250
+Wire Wire Line
+	5950 3550 6300 3550
+Wire Wire Line
+	6300 3550 6300 4250
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5CB5A6B2
+P 5900 2600
+F 0 "J4" V 5960 2640 50  0000 L CNN
+F 1 "Conn_01x02_Male" V 6051 2640 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5900 2600 50  0001 C CNN
+F 3 "~" H 5900 2600 50  0001 C CNN
+	1    5900 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5CB5AEE9
+P 4050 2600
+F 0 "J2" V 4110 2640 50  0000 L CNN
+F 1 "Conn_01x02_Male" V 4201 2640 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4050 2600 50  0001 C CNN
+F 3 "~" H 4050 2600 50  0001 C CNN
+	1    4050 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 3550 5900 3550
+Wire Wire Line
+	5900 3550 5900 3050
+$Comp
+L power:GNDREF #PWR05
+U 1 1 5CB5C144
+P 5400 3100
+F 0 "#PWR05" H 5400 2850 50  0001 C CNN
+F 1 "GNDREF" H 5405 2927 50  0000 C CNN
+F 2 "" H 5400 3100 50  0001 C CNN
+F 3 "" H 5400 3100 50  0001 C CNN
+	1    5400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR02
+U 1 1 5CB5C793
+P 3550 3150
+F 0 "#PWR02" H 3550 2900 50  0001 C CNN
+F 1 "GNDREF" H 3555 2977 50  0000 C CNN
+F 2 "" H 3550 3150 50  0001 C CNN
+F 3 "" H 3550 3150 50  0001 C CNN
+	1    3550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2900 5800 2800
+Wire Wire Line
+	4000 3550 4050 3550
+Wire Wire Line
+	4050 3550 4050 3100
+Wire Wire Line
+	3950 2950 3950 2800
+$Comp
+L Regulator_Linear:LM2937xMP U2
+U 1 1 5CB5F6C4
+P 5850 4250
+F 0 "U2" H 5850 4492 50  0000 C CNN
+F 1 "LM2937xMP" H 5850 4401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5850 4475 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2937.pdf" H 5850 4200 50  0001 C CNN
+	1    5850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM2937xMP U1
+U 1 1 5CB5F73D
+P 4000 4250
+F 0 "U1" H 4000 4492 50  0000 C CNN
+F 1 "LM2937xMP" H 4000 4401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4000 4475 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2937.pdf" H 4000 4200 50  0001 C CNN
+	1    4000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5CB6301A
+P 7850 4500
+F 0 "C5" H 7965 4546 50  0000 L CNN
+F 1 "0.1uF" H 7965 4455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7888 4350 50  0001 C CNN
+F 3 "~" H 7850 4500 50  0001 C CNN
+	1    7850 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4150 7850 4150
+Wire Wire Line
+	7850 4150 7850 4350
+Connection ~ 7700 4150
+Wire Wire Line
+	7850 4650 7850 4800
+Wire Wire Line
+	7850 4800 7300 4800
+Connection ~ 7300 4800
+Wire Wire Line
+	7300 4800 7300 4900
+$Comp
+L Device:CP C4
+U 1 1 5CB65B9D
+P 5750 3050
+F 0 "C4" H 5868 3096 50  0000 L CNN
+F 1 "10uF" H 5868 3005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5788 2900 50  0001 C CNN
+F 3 "~" H 5750 3050 50  0001 C CNN
+	1    5750 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5CB65BEB
+P 3900 3100
+F 0 "C2" H 4018 3146 50  0000 L CNN
+F 1 "10uF" H 4018 3055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 3938 2950 50  0001 C CNN
+F 3 "~" H 3900 3100 50  0001 C CNN
+	1    3900 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VBUS #PWR0101
+U 1 1 5CB6A622
+P 7700 4050
+F 0 "#PWR0101" H 7700 3900 50  0001 C CNN
+F 1 "VBUS" H 7715 4223 50  0000 C CNN
+F 2 "" H 7700 4050 50  0001 C CNN
+F 3 "" H 7700 4050 50  0001 C CNN
+	1    7700 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 5900 3050
+Wire Wire Line
+	5900 3050 5900 2800
+Wire Wire Line
+	5400 3100 5400 3050
+Wire Wire Line
+	5400 3050 5600 3050
+Wire Wire Line
+	5800 2900 5400 2900
+Wire Wire Line
+	5400 2900 5400 3050
+Connection ~ 5400 3050
+Connection ~ 4050 3100
+Wire Wire Line
+	4050 3100 4050 2800
+Wire Wire Line
+	3550 3150 3550 3100
+Wire Wire Line
+	3550 3100 3750 3100
+Wire Wire Line
+	3550 2950 3550 3100
+Wire Wire Line
+	3550 2950 3950 2950
+Connection ~ 3550 3100
+$EndSCHEMATC
